@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<!--
+Tinker CSS Template
+https://templatemo.com/tm-506-tinker
+-->
+        <title>Winspire</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+        
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="{{ url_for('static', filename= 'css/bootstrap.min.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename= 'css/bootstrap-theme.min.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename= 'css/fontAwesome.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename= 'css/hero-slider.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename= 'css/owl-carousel.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename= 'css/templatemo-style.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename= 'css/lightbox.css') }}">
+
+        <script src="/static/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <script src="/static/js/vendor/jquery-1.11.2.min.js"></script> 
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-2.3.3.min.js" integrity="sha384-dM3QQsP+wXdHg42wTqW85BjZQdLNNIXqlPw/BgKoExPmTG7ZLML4EGqLMfqHT6ON" crossorigin="anonymous"></script>
+        <script> 
+            $(function(){
+            $("#dschart").load("/static/stem.html"); 
+            });
+        </script>
+        <script> 
+            $(function(){
+            $("#dschart2").load("/static/earning_ratio.html"); 
+            });
+        </script>
+        <script> 
+            $(function(){
+            $("#dschart3").load("/static/sports.html"); 
+            });
+        </script>
+    </head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <nav class="navbar navbar-inverse" role="navigation">
+                <div class="navbar-header">
+                    <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="#" class="navbar-brand scroll-top"><em>W</em>inspire</a>
+                </div>
+                <!--/.navbar-header-->
+                <div id="main-nav" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#" class="scroll-top">Home</a></li>
+                        <li><a href="#" class="scroll-link" data-id="about">STEM</a></li>
+                        <li><a href="#" class="scroll-link" data-id="testimonial">Music</a></li>
+                        <li><a href="#" class="scroll-link" data-id="blog">Sports</a></li>
+                        <li><a href="#" class="scroll-link" data-id="topchart">Statistics</a></li>
+                    </ul>
+                </div>
+                <!--/.navbar-collapse-->
+            </nav>
+            <!--/.navbar-->
+        </div>
+        <!--/.container-->
+    </div>
+    <!--/.header-->
+
+
+    <div class="parallax-content baner-content" id="home">
+        <div class="container">
+            <div class="text-content">
+                <h2><em>WINSPIRE</em></h2>
+                <p>Winspire is a platform showcasing Women’s achievements since times immemorial across different fields. Here you can also get an insight into the current situation on women employment and education.</p>
+                <div class="primary-white-button">
+                    <a href="#" class="scroll-link" data-id="about">Let's Go!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <section id="about" class="page-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="service-item">
+                        <div class="icon">
+                            <img src="/static/img/service_icon_01.png" alt="">
+                        </div>
+                        <h4>Inspiring Women in STEM</h4>
+                        <div class="line-dec"></div>
+                        <p>Here are a some inspiring stories of women in STEM for you!</p>
+                        <div class="primary-blue-button">
+                            <a href="#" class="scroll-link" data-id="portfolio">Continue Reading</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="service-item">
+                        <div class="icon">
+                            <img src="/static/img/service_icon_02.png" alt="">
+                        </div>
+                        <h4>Inspiring Sportswomen</h4>
+                        <div class="line-dec"></div>
+                        <p>Here are a some inspiring stories of sportswomen across the world for you!</p>
+                        <div class="primary-blue-button">
+                            <a href="#" class="scroll-link" data-id="blog">Continue Reading</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="service-item">
+                        <div class="icon">
+                            <img src="/static/img/service_icon_03.png" alt="">
+                        </div>
+                        <h4>Inspiring Women Musicians</h4>
+                        <div class="line-dec"></div>
+                        <p>Here are a some inspiring stories of women who made it big in the Music industry!</p>
+                        <div class="primary-blue-button">
+                            <a href="http://127.0.0.1:5000/chart1" class="scroll-link" data-id="testimonial">Continue Reading</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="service-item">
+                        <div class="icon">
+                            <img src="/static/img/service_icon_04.png" alt="">
+                        </div>
+                        <h4>Statistics</h4>
+                        <div class="line-dec"></div>
+                        <p>Take a look at interactive statistics on women employment and education.</p>
+                        <div class="primary-blue-button">
+                            <a href="#" class="scroll-link" data-id="topchart">Check it out!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <div class="content-wrapper">
+            <div class="inner-container container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-12">
+                        <div class="section-heading">
+                            <h4>Inspiring Women in STEM</h4>
+                            <div class="line-dec"></div>
+                            <p>Here are a some inspiring stories of women in STEM for you!</p>
+                            <ul class="tabs clearfix" data-tabgroup="second-tab-group">
+                                <li><a href="#tab1" class="active">Katherine Johnson</a></li>
+                                <li><a href="#tab2">Joan Clarke</a></li>
+                                <li><a href="#tab3">Grace Hopper</a></li>
+                                <li><a href="#tab4">Roberta Bondar</a></li>
+                                <li><a href="#tab5">Francoise Barré-Sinoussi</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="projects-holder-3">
+                            <div class="projects-holder">
+                                <section id="second-tab-group" class="tabgroup">
+                                    <div id="tab1">
+                                        <img src="/static/img/Katherine Johnson Smaller.jpeg" alt="">
+                                        <div class="text-content">
+                                            <h4>Katherine Johnson</h4>
+                                            <span><a href="#">STEM</a> / <a href="#">NASA Space Scientist</a> / <a href="#">USA</a></span>
+                                            <p>Born in 1918, Katherine Johnson, graduated from university at 18. She was awarded the Presidential Medal of Freedom in 2015 for a lifetime of work as a pioneering physicist, mathematician and space scientist. She and her colleagues, Dorothy Vaughan and Mary Jackson did the calculations that guided NASA’s 1962 Friendship 7 Mission. A teacher and research mathematician, she co-authored over 25 scientific papers.  Can you imagine how rare this brainy young teen was, entering West Virginia State College in 1932? About as unique as an African American woman scientist at NASA in the 1950s. She was both—making her the rarest of the rare! Shauna Gammon, Ayogo’s Lead Product Designer: “I am so grateful that Katherine Johnson helped pave the way for women like me to pursue careers in mathematics and technology. Katherine’s accomplishments are astounding, as was her graceful self-assurance that she belonged wherever her abilities carried her.”</p>
+                                        </div>
+                                    </div>
+                                    <div id="tab2">
+                                        <img src="/static/img/JoanClarke.jpeg" alt="">
+                                        <div class="text-content">
+                                            <h4>Joan Clarke</h4>
+                                            <span><a href="#">STEM</a> / <a href="#">Code Breaker & Cryptanalyst</a> / <a href="#">UK</a></span>
+                                            <p>Joan Clarke was born in 1917 and gained a First in mathematics from Cambridge but was denied a Full Degree as Cambridge did not award them to women at the time. She was the only woman to work in the nerve centre of the quest to crack German Enigma ciphers. Because of the secrecy that still surrounds events atBletchley Park, the full extent of Clarke’s achievements and those of her colleagues Margaret Rock, Mavis Lever and Ruth Briggs, remains unknown. Avi van Haren, Ayogo’s Director of Product Management, chose to celebrate Joan: “Watching The Imitation Game, I was introduced to Joan, a brilliant woman who was part of saving so many lives and deserves her place in history.”</p>
+                                        </div>
+                                    </div>
+                                    <div id="tab3">
+                                        <img src="/static/img/Grace Hopper Smaller.jpeg" alt="">
+                                        <div class="text-content">
+                                            <h4>Grace Hopper</h4>
+                                            <span><a href="#">STEM</a> / <a href="#">Inventor & Computer Scientist</a> / <a href="#">USA</a></span>
+                                            <p>An American computer scientist, and a Rear Admiral in the US Navy, Grace Hopper invented the first programming language to use english words. She graduated Phi Beta Kappa from Vassar in 1928 with a bachelor’s degree in mathematics and physics and earned her master’s degree at Yale University in 1930. Even though she was only 105 pounds, well under the minimum weight for joining the navy, she got an exemption and enlisted in WWII. After the war, still working for the navy, her associates discovered a moth mucking up the Mark II Computer. It was removed and she coined the term “debugging”. She then joined the UNIVAC team where she pioneered using computers for more than arithmetic. By 1952 she had invented an operational compiler, the first she knew of. Ayogo software developer Stacey Vachon found a few famous quotes by Admiral Hopper: “If it’s a good idea, go ahead and do it. It’s much easier to apologize than it is to get permission.”</p>
+                                        </div>
+                                    </div>
+                                    <div id="tab4">
+                                        <img src="/static/img/Roberta Bondar smaller.jpeg" alt="">
+                                        <div class="text-content">
+                                            <h4>Roberta Bondar</h4>
+                                            <span><a href="#">STEM</a> / <a href="#">Astronaut Neurologist</a> / <a href="#">Age: 76</a> / <a href="#">Canada</a></span>
+                                            <p>Canada’s first female astronaut and the world’s first astronaut-neurologist. Roberta Bondar has received many honours including the Order of Canada, the Order of Ontario, the NASA Space Medal, over 22 honorary degrees, and induction into the Canadian Medical Hall of Fame. After her astronaut career she spent the next decade leading an international research team at NASA studying the effects on astronauts of spaceflight and re-adaptation back to Earth’s gravity. Nicole Moisey, Ayogo’s Employee Experience Manager admires Dr. Bondar: “Growing up, Dr. Bondar was my hero and inspired me to go after my dreams. If she could reach her dreams then so could I!”.</p>
+                                        </div>
+                                    </div>
+                                    <div id="tab5">
+                                        <img src="/static/img/Francoise Barre-Sinoussi Smaller.jpeg" alt="">
+                                        <div class="text-content">
+                                            <h4>Francoise Barré-Sinoussi</h4>
+                                            <span><a href="#">STEM</a> / <a href="#">Virologist</a> / <a href="#">Age: 74</a> / <a href="#">France</a></span>
+                                            <p>Parisian scientist Francoise Barré-Sinoussi is a celebrated for her discovery of HIV as the cause of the immunodeficiency disease, AIDS. In 2008, Barré, along with Luc Montaigner, discovered that the HIV retrovirus attacked lymphocytes, a blood cell that plays an important role in the body’s immune system. Her vital work has helped millions of people who are HIV-positive to live long, healthy lives, and could pave the way for a cure in the near future.</p>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </section>
+
+
+    <section id="testimonial">
+        <div class="container">
+            <div class="section-heading">
+                <h4>Inspiring Women Musicians</h4>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+
+                    <div id="owl-testimonials" class="owl-carousel owl-theme">
+                        <div class="item">
+                            <div class="testimonials-item">
+                                <img src="/static/img/Bjork.png" />
+                                <p>The Icelandic singer Bjork (meaning ‘birch-tree’ in Icelandic) is known for being truly non-conformist. Once a member of a band whose name translates to ‘Cork the Bitch’s Ass’. She later formed the gothic punk band KUKL, meaning ‘witchcraft’ in Medieval Icelandic. Her eclectic solo career has since secured 8th place on MTV’s ’22 Greatest Voices in Music’ in 2005. She was once offered an island, now known as ‘Bjork Island’ as a gift from the Icelandic government, and, although she was tempted, she declined the offer due to concerns for her privacy.</p>
+                                <h4>Bjork</h4>
+                                <span>Singer-Songwriter / </span>
+                                <span>Iceland</span>
+
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimonials-item">
+                                <img src="/static/img/Aretha Franklin.jpeg" />
+                                <p>"First and foremost comes her late Majesty the Queen of Soul. Aretha Franklin’s sparkling career began with humble roots when she began singing in her local gospel choir. Her uniqueness, however, was apparent from early on, and she recorded her first album at the tender age of 14. She then transitioned to secular music and became a worldwide superstar. Franklin’s music later became an important part of the civil rights movement, and songs such as her version ‘I Say A Little Prayer’ became a tribute to Martin Luther King.
+                                    Her voice was described as the definition of soul, with its warm, rich tone. She touched many with the rawness of the message of her songs, as she once said, ‘I sing to the realist. People who accept it like it is’. After hearing her feminist take of Respect, Otis Redding remarked ‘I just lost my song. That girl took it away from me.’"</p>
+                                <h4>Aretha Franklin</h4>
+                                <span>Singer-Songwriter / </span>
+                                <span>USA</span>
+
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimonials-item">
+                                <img src="/static/img/Joni Mitchell.jpeg" />
+                                <p>“ Born Roberta Joan Anderson, the Canadian Joni Mitchell first started singing for her parents at the age of 9 when recovering in hospital after contracting polio. First influenced by Classical music, she went on to teach herself to play guitar, ukulele and dulcimer, and she is known for the complexity of her compositions. Producing a mixture of folk, pop, rock and jazz, her songs often reflect on social and environmental issues. She has won eight Grammy Awards, and her song ‘Both Sides Now’ was played in the opening ceremony for the Winter Olympic Games in Vancouver in 2011.</p>
+                                <h4>Joni Mitchell</h4>
+                                <span>Singer-Songwriter / </span>
+                                <span>Canada</span>
+
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="tabs-content" id="blog">
+        <div class="container">
+            <div class="row">
+                <div class="wrapper">
+                    <div class="col-md-4">
+                        <div class="section-heading">
+                            <h4>Inspiring Sportswomen</h4>
+                            <div class="line-dec"></div>
+                            <p>Here are a some inspiring stories of sportswomen across the world for you!</p>
+                            <ul class="tabs clearfix" data-tabgroup="first-tab-group">
+                                <li><a href="#tab12">Tessa Virtue</a></li>
+                                <li><a href="#tab7">Lindsey Vonn</a></li>
+                                <li><a href="#tab8">Serena Williams</a></li>
+                                <li><a href="#tab9">Fu Yuanhui</a></li>
+                                <li><a href="#tab10">Saina Nehwal</a></li>
+                                <li><a href="#tab11">Marta Vieira da Silva</a></li>
+                                <li><a href="#tab6" class="active">Ronda Rousey</a></li>
+                                <li><a href="#tab13">Simone Biles</a></li>
+                                <li><a href="#tab14">Maria Sharapova</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <section id="first-tab-group" class="tabgroup">
+                            <div id="tab12">
+                                <img src="/static/img/TessaVirtue.jpeg" alt="">
+                                <div class="text-content">
+                                    <h4>Tessa Virtue</h4>
+                                    <span><a href="#">Sportswomen</a> / <a href="#">Figure Skating</a> / <a href="#">Age: 32</a> / <a href="#">Canada</a></span>
+                                    <p>"Tessa Jane McCormick Virtue CM (born May 17, 1989) is a Canadian retired ice dancer. Tessa Virtue was originally trained in ballet and modern dance, but over time made a transition to ice dancing. Her skating career began in 1997 at 7 years of age. With ice dance partner Scott Moir, she is the 2010 and 2018 Olympic champion, the 2014 Olympic silver medalist, a three-time World champion (2010, 2012, 2017), a three-time Four Continents champion (2008, 2012, 2017), the 2016–17 Grand Prix Final champion, an eight-time Canadian National champion (2008–2010, 2012–2014, 2017–2018), the 2006 World Junior champion and the 2006 Junior Grand Prix gold medalists. Widely regarded as one of the greatest ice dance teams of all time, they are the only ice dancers in history to achieve a Super Slam, having won all major competitions in their senior and junior careers. Their career was a run of sustained excellence, but it wasn’t an unbroken string of successes. To get to the top – and stay there – Virtue and Moir had to adapt.
+                                        “We weren’t always number one. And that drove us in itself — that constant pursuit for greatness,” says Virtue."</p>
+                                </div>
+                            </div>
+                            <div id="tab7">
+                                <img src="/static/img/Lindsey Vonn.jpeg" alt="">
+                                <div class="text-content">
+                                    <h4>Lindsey Vonn</h4>
+                                    <span><a href="#">Sportswomen</a> / <a href="#">Skiing</a> / <a href="#">Age: 37</a> / <a href="#">USA</a></span>
+                                    <p>Lindsey Caroline Vonn is an American former World Cup alpine ski racer on the US Ski Team. She won four World Cup overall championships — one of only two female skiers to do so, along with Annemarie Moser-Pröll — with three consecutive titles in 2008, 2009, and 2010, plus another in 2012. Vonn won the gold medal in downhill at the 2010 Winter Olympics, the first one for an American woman. She also won a record eight World Cup season titles in the downhill discipline , five titles in super-G, and three consecutive titles in the combined. She has the second highest super ranking of all skiers, men or women. She is experienced a lot of physical injuries throuhgout her career but she did not let them stop her, she said: "I think it was during my--during my second ACL surgery, I was out back-to-back seasons. I had, you know, two ACLs, and within an eight-month span. I was watching the Olympics at home from my couch on crutches, and I just really lost motivation. Once I kind of got past a certain point of the rehab, I felt like I was making progress, and that was the positivity that I that I needed to kind of really get things going"</p>
+                                </div>
+                            </div>
+                            <div id="tab8">
+                                <img src="/static/img/SerenaWilliams.jpeg" alt="">
+                                <div class="text-content">
+                                    <h4>Serena Williams</h4>
+                                    <span><a href="#">Sportswomen</a> / <a href="#">Tennis</a> / <a href="#">Age: 40</a> / <a href="#">USA</a></span>
+                                    <p>Serena Jameka Williams is an American professional tennis player. She has won 23 Grand Slam singles titles, the most by any player in the Open Era, and the second-most of all time behind Margaret Court. The Women's Tennis Association ranked her singles world No. 1 on eight separate occasions between 2002 and 2017. She was not born into a world of respect and fame. Like many other black females, Serena faced hardships all throughout her life. Not only has Williams influenced the world of athletics, she has also influenced the community, specifically women and mothers. She shared her story on the experiences and hardships of childbirth. Williams and her sister have additionally inspired more diversity within sports and the community. African-American children, from poor areas growing up with a poor home life have been inspired to begin playing tennis. She has devoted time and money to the development of a tennis center in Washington, DC. In the 1950s, tennis consisted of mostly white people. Now, there is much more diversity within sports. Serena has inspired kids of color to take part in youth programs and begin playing tennis.</p>
+                                </div>
+                            </div>
+                            <div id="tab9">
+                                <img src="/static/img/FuYuanhui.jpeg" alt="">
+                                <div class="text-content">
+                                    <h4>Fu Yuanhui</h4>
+                                    <span><a href="#">Sportswomen</a> / <a href="#">Swimming</a> / <a href="#">Age: 26</a> / <a href="#">China</a></span>
+                                    <p>Fu Yuanhui is a Chinese competitive swimmer who specializes in backstroke. She won a bronze medal at the 2016 Rio Olympics in the 100-meter backstroke. She finished in a national record time of 58.76. Throughout the Olympics, her cheerful interviews and goofy demeanor made her very popular. Mark Dreyer, a Beijing-based sports writer, noted that Fu exemplified "a positive trend in Chinese sports whereby athletics was undergoing a transition away from "manufactured Olympic champions" from the state-run sports system who were effective at bringing home medals but had cardboard personalities and inspired little devotion among fans'. Neither of her parents had much of an athletic background, but Fu’s father sent his daughter to a local swimming school at the age of five to try to slowly improve her breathing. Fu, who reportedly suffered from asthma since childhood, eventually made a name for herself in the junior circles. In 2016, both eastern and Western media praised her honesty and willingness to raise the topic of menstruation and she soon emerged as one of the Games’ most likeable athletes regardless of national affiliation.</p>
+                                </div>
+                            </div>
+                            <div id="tab10">
+                                <img src="/static/img/SainaNehwal.jpeg" alt="">
+                                <div class="text-content">
+                                    <h4>Saina Nehwal</h4>
+                                    <span><a href="#">Sportswomen</a> / <a href="#">Badminton</a> / <a href="#">Age: 31</a> / <a href="#">India</a></span>
+                                    <p>Saina Nehwal (born 17 March 1990) is an Indian professional badminton player. A former world no. 1, she has won 24 international titles, which includes ten Superseries titles. She started her training at Lal Bahadur Stadium which was located 25 kms from her home. Her father used to drop her off every day at 4 a.m. She continued her studies simultaneously along with her training. She was also trained by S. M. Arif who was one of the most renowned instructors at the time. Although she reached the world's 2nd in 2009, it was only in 2015 that she was able to attain the world no. 1 ranking, thereby becoming the only female player from India and overall the second Indian player – after Prakash Padukone – to achieve this feat. She has represented India three times in the Olympics, winning a bronze medal in her second appearance at the London 2012. Considered one of India's most successful badminton players, Nehwal is credited for increasing the popularity of badminton in India. In 2016, the Government of India (GoI) conferred the Padma Bhushan – India's third highest civilian award – on her. Saina teaches us to keep on going no matter what. Fighting your way through the difficulties is what will make you strong. Once she woke up with blisters on her leg, but she never stopped. She said that she was happy that she could win matches even in such a bad condition and was really happy with her fighting spirit.</p>
+                                </div>
+                            </div>
+                            <div id="tab11">
+                                <img src="/static/img/Marta Vieira da Silva.jpeg" alt="">
+                                <div class="text-content">
+                                    <h4>Marta Vieira da Silva</h4>
+                                    <span><a href="#">Sportswomen</a> / <a href="#">Soccer</a> / <a href="#">Age: 35</a> / <a href="#">Brazil</a></span>
+                                    <p>Marta Vieira da Silva (born 19 February 1986), is a Brazilian footballer with both Brazilian and Swedish citizenship, who plays for the Orlando Pride in the National Women's Soccer League and the Brazil national team as a forward. She holds the record for being Brazil's top international goalscorer of either gender, with 112 goals. With 17 goals, Marta also holds the record for most goals scored in the FIFA World Cup tournament (women's or men's). She is UN Women Goodwill Ambassador for women and girls in sport. Marta, wants to inspire women and girls to challenge stereotypes, overcome barriers and follow their dreams and ambitions, including in the area of sport. An icon and role model for many, Marta is widely regarded as the best female soccer player of all time. This is the sixth year in a row that she has won the Best FIFA Women’s Player award. During her recent visit to UN Women headquarters in New York, Marta spoke about her personal journey, motivation and what she hopes to do as UN Women Goodwill Ambassador and said "My message to girls everywhere in this world: believe in yourself and trust yourself, because if you don’t believe in yourself, no one else will.”</p>
+                                </div>
+                            </div>
+                            <div id="tab6">
+                                <img src="/static/img/RondaRousey.jpeg" alt="">
+                                <div class="text-content">
+                                    <h4>Ronda Rousey</h4>
+                                    <span><a href="#">Sportswomen</a> / <a href="#">Wrestler</a> / <a href="#">Age: 35</a> / <a href="#">USA</a></span>
+                                    <p>"In a brutal sport dominated by men, “Rowdy” Ronda Rousey has emerged as one of the biggest stars in MMA. Her penchant for trash-talking her opponents before brutally submitting them with her trademark armbar has definitely pushed her into villain territory. It’'s territory Rousey seems to relish. Since making her amateur debut in 2010, Rousey’'s career has skyrocketed. In November 2012 she became the first female fighter to sign with the UFC. Three months later she became the first female fighter to headline a UFC event. To date she’'s 9-0 (eight submissions and a TKO) and the No. 1 pound-for-pound female MMA fighter in the world. Rousey’'s influence extends well beyond the Octagon. She gets regular modeling work and had a memorable appearance in ESPN The Magazine’'s annual ""Body Issue"" in 2012. Rousey speaks repeatedly of the importance of independence, of how women should not be ‘'do-nothings’' and ‘'take care of themselves’'. In a world where pictures, film and media rhetoric constantly give women the idea that they must ‘'be'’ a certain way in order to be ‘'liked’', she gives them the all-important message that the most important thing in the world is to be oneself – for nobody else, a message that will go a long way in helping women world-over build a self-belief they may not have previously had. Not only is she at the top of her game, she has been through immense trials to get there. There are still several battles she fights along the way, but she is fearless about them all. “I don't shy away from any questions. I'm not scared of any question. I'll give you an answer. A lot of people are scared of having actual opinions out there. People are so scared of criticism... I''m not scared of people disliking me.”
+
+                                        "</p>
+                                </div>
+                            </div>
+                            <div id="tab13">
+                                <img src="/static/img/SimoneBiles .jpeg" alt="">
+                                <div class="text-content">
+                                    <h4>Simone Biles</h4>
+                                    <span><a href="#">Sportswomen</a> / <a href="#">Gymnastics</a> / <a href="#">Age: 24</a> / <a href="#">USA</a></span>
+                                    <p>"Simone Arianne Biles (born March 14, 1997) is an American artistic gymnast. With a combined total of 32 Olympic and World Championship medals, Biles is tied as the most decorated gymnast of all time. Biles' seven Olympic medals also ties Shannon Miller for the most Olympic medals won by an American gymnast. Biles is considered one of the greatest and most dominant gymnasts of all time.
+                                        Biles was just six years old when she first stepped on the mat, during a daycare field trip. Astonishingly, the trainers suggested she had the gift of gymnastics then itself. Thus, young Biles began her journey to being crowned as the GOAT of gymnastics. Apart from her Olympic glories, Simone inspired the world, prioritizing her mental health and withdrawing from major events in Tokyo. ""I want people to reach for their dreams. If you're willing to put in a lot of work, and if you're focused and determined, you can go really far. That doesn't mean everything will happen overnight; for me, it took years of training and perseverance to reach my goals. But looking back on it now, I'm glad I didn't give up. There so many people who have inspired me with their love and encouragement along the way — and I want to pass on that inspiration to readers,"" said Biles."</p>
+                                </div>
+                            </div>
+                            <div id="tab14">
+                                <img src="/static/img/ MariaSharapova.jpeg" alt="">
+                                <div class="text-content">
+                                    <h4>Maria Sharapova</h4>
+                                    <span><a href="#">Sportswomen</a> / <a href="#">Tennis</a> / <a href="#">Age: 34</a> / <a href="#">Russia</a></span>
+                                    <p>"Maria Yuryevna Sharapova (born 19 April 1987) is a Russian former world No. 1 tennis player. Although she played under the banner of Russia with the Women's Tennis Association (WTA), she has lived in and been a United States permanent resident since 1994. Sharapova competed on the WTA Tour from 2001 to 2020 and had been ranked world No. 1 in singles by the WTA on five separate occasions, for a total of 21 weeks. She is one of ten women, and the only Russian, to hold the career Grand Slam. She is also an Olympic medalist, having won a silver medal in women's singles at the 2012 Summer Olympics in London. Sharapova became the world No. 1 for the first time on 22 August 2005, at the age of 18, becoming the first Russian female tennis player to top the singles rankings, and last held the ranking for a fifth time for four weeks from 11 June 2012, to 8 July 2012. The injury-plagued Sharapova, renowned for her never-say-die approach to the sport despite regularly being hampered by shoulder problems, won five Grand Slam titles. World number one Novak Djokovic heard about Sharapova’s retirement after he reached the Dubai Duty Free Tennis Championships quarter-finals and asked the crowd to applaud her for everything she accomplished. “She’s great fighter. As dedicated as someone can really be in our sport,” said Djokovic. “The willpower an the willingness to kind of overcome all the obstacles she had, especially ... with injuries and surgeries and trying to fight back, come back to the court and play on her desired level."</p>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="topchart" class="container">
+        <div class="row">
+            <div id="dschart"></div>
+        </div>
+    </div>
+    <div id="bottomchart" class="container">
+        <div class="row">
+            <div id="dschart2"></div>
+        </div>
+    </div>
+    <div id="mostbottomchart" class="container">
+        <div class="row">
+            <div id="dschart3"></div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-12">
+                    <div class="logo">
+                        <a class="logo-ft scroll-top" href="#"><em>W</em>inspire</a>
+                        <p>Team DNA-Swatch</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="/static/js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+    <script src="/static/js/vendor/bootstrap.min.js"></script>
+
+    <script src="/static/js/plugins.js"></script>
+    <script src="/static/js/main.js"></script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        // navigation click actions 
+        $('.scroll-link').on('click', function(event){
+            event.preventDefault();
+            var sectionID = $(this).attr("data-id");
+            scrollToID('#' + sectionID, 750);
+        });
+        // scroll to top action
+        $('.scroll-top').on('click', function(event) {
+            event.preventDefault();
+            $('html, body').animate({scrollTop:0}, 'slow');         
+        });
+        // mobile nav toggle
+        $('#nav-toggle').on('click', function (event) {
+            event.preventDefault();
+            $('#main-nav').toggleClass("open");
+        });
+    });
+    // scroll function
+    function scrollToID(id, speed){
+        var offSet = 50;
+        var targetOffset = $(id).offset().top - offSet;
+        var mainNav = $('#main-nav');
+        $('html,body').animate({scrollTop:targetOffset}, speed);
+        if (mainNav.hasClass("open")) {
+            mainNav.css("height", "1px").removeClass("in").addClass("collapse");
+            mainNav.removeClass("open");
+        }
+    }
+    if (typeof console === "undefined") {
+        console = {
+            log: function() { }
+        };
+    }
+    </script>
+</body>
+</html>

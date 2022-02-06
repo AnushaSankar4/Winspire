@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}">
+    <title>Inspiron</title>
+    
+</head>
+<body>
+   <div class="container-fluid">
+    <div class="row navbar-expand-lg navbar-dark bg-dark shadow-sm p-1">
+      <center>
+        <a href="#" class="navbar-brand">
+          <span class="font-weight-bold">Inspiron: Women Inspiring women</span>
+        </a>
+      </center>
+    </div>
+    <div class="row p-2">
+      <div class="col-lg-3">
+        <div class="row border p-2">
+          <form action="/new" method="post" role="form" id="dataForm">
+            <div class="form-group pt-1">
+              <label>Choose a category under Sports, Music, STEM to read inspiring stories of women!</label>
+              <input class="form-control" id="specialization" name="specialization" class="controls" type="text" placeholder="Search here" autocomplete="on" runat="server">
+            </div>
+          </form> 
+          <div class="form-group pt-3">
+            <button id="submit" onclick="submit()" class="btn btn-primary">Inspire Me!</button>
+          </div>
+        </div>
+        <div class="row border p-2" id="statistics" style="height: 192px;">
+          
+        </div>
+      </div>
+      <div class="col-lg-9">
+        <div id="map" class="border" style="height: 650px; width: 100%;"></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
